@@ -832,6 +832,9 @@ require('lazy').setup {
     keys = {
       { '<leader>g', '<cmd>LazyGit<cr>', desc = 'Lazy[G]it' },
     },
+    config = function()
+      vim.g.lazygit_floating_window_scaling_factor = 1
+    end,
   },
   {
     'catppuccin/nvim',
@@ -843,5 +846,5 @@ require('lazy').setup {
     end,
   },
 }
-
+vim.g.lazygit_floating_window_scaling_factor = 1
 -- vim: ts=2 sts=2 sw=2 et
